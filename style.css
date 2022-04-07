@@ -1,10 +1,11 @@
-*{background-color:beige;
+*{
 font-size: large
 ;
 font-family: Verdana;}
 header{
     background-color:darkred;
-    height:6.5em;
+    
+    width: 100%;
  }
 h1{ text-align: center;
     padding-top:1em;
@@ -14,14 +15,14 @@ h1{ text-align: center;
     font-style: italic;
     font-family: 'Times New Roman';
     background-color:darkred;
-      }
+          }
 h3{ color: lightpink; 
     text-align: center; 
     background-color:darkred;
 }
 nav{
-    position: sticky;
-    display: inline-block;
+    position:sticky;
+    display:inline-flex;
     width: 100%; 
     background-color: lightgrey;
     height: auto;
@@ -30,23 +31,45 @@ nav{
     width: 100%;
     font-style: italic;
 }
-nav a    {padding-right: 20px;
-        background-color: lightgrey;
-
+nav a {padding-right: 20px;
+      background-color: lightgrey;
+    }  
+a:hover {
+        color: red;
+        background-color: white;
 }
-table {
+div.table {
+    margin:auto;
     border-style:solid;
     border-color: brown;
     border-collapse: collapse;
+    width: 100%;
 }
 th {border: 5px; 
 border-color:green; 
 border-style:double; 
-background-color: lightgray;}
+background-color: lightgray;
+}
 td {border-color:black; 
     border-style:dotted; 
     background-color: palegoldenrod;
-       
+    width: 100%;
 }
 
-    
+body {
+    background-color: lightblue; }
+  @media (max-width: 600px) {
+    body {
+      background-color: lightpink;
+    }
+  
+}
+
+h2{color:blueviolet}
+h3{color:coral}
+footer{background-color: aquamarine;
+margin-top: 2em;
+padding: 1em;
+text-align: center;
+font-size: 10px;
+}
