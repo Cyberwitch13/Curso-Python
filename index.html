@@ -75,7 +75,9 @@
 <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/mk4XB2wZqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>Este es un ejemplo de un formulario:</p>
-<div class="form"><form>
+<div class="form">
+    <form name="cats" action="submit" onsubmit="validateForm()" method="post">
+     
     <label for="fname">Nombre:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Apellido:</label><br>
@@ -90,8 +92,15 @@
   <label for="CatC"> Gatos Pelo Corto</label><br>
   <input type="checkbox" id="CatS" name="CatS" value="CatS">
   <label for="CatS"> Gatos Sin Pelo</label><br>
-  <button type="button">Enviar!</button>
-  </form>
+  <button type="button" onclick="validateForm()">Enviar</button>
+    <script>function validateForm() {
+    let x = document.getElementById("email").value;
+    if (x ="") {
+      alert("Email es obligatorio");
+      return text = "Enviado";
+    }
+  }</script>
+    </form>
 </div>
 </body>
 

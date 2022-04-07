@@ -10,7 +10,7 @@ header{
 h1{ text-align: center;
     padding-top:1em;
     color:white;
-    text-decoration;
+    text-decoration:underline;
     font-size: 30px;
     font-style: italic;
     font-family: 'Times New Roman';
