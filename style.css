@@ -48,7 +48,8 @@ div.table {
     border-style:solid;
     border-color: brown;
     border-collapse: collapse;
-    
+    padding: 0.5em;
+    margin-top: 1em;
 }
 th {border: 5px; 
 border-color:green; 
