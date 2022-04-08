@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang ="es">
 <head>
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/4bdccd792e.js" crossorigin="anonymous"></script>
 <link type="text/css" rel ="stylesheet" href="style.css">
+
 </head>
 <header>
-    <h1 >Hello World! </h1>
-    <h3>I need a nap</h3>
-
- 
+    <h1 >Hola Profe! </h1>
+    <h3>Este es mi trabajo Práctico</h3>
     <nav>
-        <a href="https://google.com">Google</a>
-   <a href="https://bing.com" >Bing</a>
-   <a href="https://yahoo.com">Yahoo</a>
-         
+        <a href=index.html >Home</a>
+        <a href=fluffy.html >Gatos Plumosos</a>
+        <a href=evil.html>Gatos Malévolos</a>
+        <a href="https://www.fundaciondegatitos.org.ar/donaciones">Ayudar</a>
+     
    </nav>
-
 </header>
-    <br>
-    <br>
-    <br>
-<table >
-    <tr style="border-bottom: 1px; border-color:black; border-style:dotted; background-color: lightgray;">
+ <body>
+     <p>Antes que nada te aclaro que mi fuerte no es el diseño, asi que voy a intentar aplicar los conocimientos que vimos, pero no esperes que se vea "lindo", ya que no es mi objetivo. Tan solo pretendo que puedas evaluar los conocimientos adquiridos.</p>
+          <h2>Esta es una tabla, armada con las etiquetas que vimos en las primeras clases:</h2>
+     <p>Aproveche para usar distintos estilos en los margenes fondos, etc. Algunos aplicados a través de la Stylesheet y otros inline.</p>
+  <div class="table">      
+<table>
+    <tr >
         <th>Date</th>
         <th>Name</th>
         <th>Email</th>
@@ -37,50 +38,75 @@
         <td>Active</td>
     </tr>
     <tr>
-         <td>Mariana</td>
-        <td>mariana.berrittella@gmail.com</td>
+         <td>test6</td>
+        <td>test6@gmail.com</td>
         <td>Active</td>
     </tr><tr>
-        <td >3/10/2022</td>
-        <td>Mariana</td>
-        <td>mariana.berrittella@gmail.com</td>
+        <td >3/11/2022</td>
+        <td>test</td>
+        <td>test1@gmail.com</td>
         <td>Active</td>
     </tr><tr>
-        <td >3/10/2022</td>
-        <td>Mariana</td>
-        <td>mariana.berrittella@gmail.com</td>
+        <td >3/12/2022</td>
+        <td>test2</td>
+        <td>test2@gmail.com</td>
         <td>Active</td>
         </tr><tr>
-            <td >3/10/2022</td>
-            <td>Mariana</td>
-            <td>mariana.berrittella@gmail.com</td>
+            <td >3/13/2022</td>
+            <td>Test3</td>
+            <td>test3@gmail.com</td>
             <td>Active</td>
         </tr><tr>
-            <td >3/10/2022</td>
-            <td>Mariana</td>
-            <td>mariana.berrittella@gmail.com</td>
+            <td >3/14/2022</td>
+            <td>test4</td>
+            <td>test4@gmail.com</td>
             <td>Active</td>
     </tr><tr>
         <td rowspan="2">3/10/2022</td>
-        <td>Mariana</td>
-        <td>mariana.berrittella@gmail.com</td>
+        <td>test5</td>
+        <td>test5@gmail.com</td>
         <td>Active</td>
     </tr>
     
 </table>
-<br>
-<br>
-<img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="kitten" width="30%" style="display: auto; padding: 5px; ">
-<img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="kitten" width="30%" style="display: auto; padding: 5px; ">
-<img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="kitten" width="30%" style="display: auto; padding: 5px; ">
-
-<br>
-<hr>
-<br>
-
+</div>
+<h2>Este es un video de gatos andando en roombas</h2>
+<p>Esta insertado con un iframe para cumplir con el requisito del TP.</p>
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/mk4XB2wZqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>Este es un ejemplo de un formulario:</p>
+<div class="form">
+    <form name="cats" action="submit" onsubmit="validateForm()" method="post">
+     
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Apellido:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="lname">Teléfono:</label><br>
+    <input type="phone" id="phone" name="phone"> <br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"> <br>
+    <input type="checkbox" id="CatL" name="CatL" value="Gatos Plumosos">
+  <label for="CatL"> Gatos Pelo Largo</label><br>
+  <input type="checkbox" id="CatC" name="CatC" value="CatC">
+  <label for="CatC"> Gatos Pelo Corto</label><br>
+  <input type="checkbox" id="CatS" name="CatS" value="CatS">
+  <label for="CatS"> Gatos Sin Pelo</label><br>
+  <button type="button" onclick="validateForm()">Enviar</button>
+    <script>
+    function validateForm() {
+    let x = document.forms["cats"]["email"].value;
+        if (x =="") {
+      alert("Email es obligatorio");
+      return text = "Enviado";
+    }
+  }</script>
+    </form>
+</div>
 </body>
 
 <footer>
+    <p>Este footer contiene ejemplos de uso de iconos insertados con Fontawesome y a su vez linkeados a sitios externos. También inclui un logo insertado como imagen. </p>
     <a href="https://amazon.com" ><img src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/Prime_clear-bg._CB423472251_.png" alt="Amazon" width="95"  style="margin-left: auto; margin-right: auto; background-color:white;"></a>
     <i class="fab fab fa-bitcoin" style="margin-left: auto; font-size: 95px; padding-left: 0.3em; padding-right: 0.3em"> </i>
     <i class="fas fa-dollar-sign" style="margin-left: auto; font-size: 95px;padding-right: 0.3em "> </i>

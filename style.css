@@ -1,27 +1,28 @@
-*{background-color:beige;
+*{
 font-size: large
 ;
 font-family: Verdana;}
 header{
     background-color:darkred;
-    height:6.5em;
+    
+    width: 100%;
  }
 h1{ text-align: center;
     padding-top:1em;
     color:white;
-    text-decoration;
+    text-decoration:underline;
     font-size: 30px;
     font-style: italic;
     font-family: 'Times New Roman';
     background-color:darkred;
-      }
+          }
 h3{ color: lightpink; 
     text-align: center; 
     background-color:darkred;
 }
 nav{
-    position: sticky;
-    display: inline-block;
+    position:sticky;
+    display:inline-flex;
     width: 100%; 
     background-color: lightgrey;
     height: auto;
@@ -30,12 +31,62 @@ nav{
     width: 100%;
     font-style: italic;
 }
-nav a    {padding-right: 20px;
-        background-color: lightgrey;
-
+nav a {padding-right: 20px;
+      background-color: lightgrey;
+    }  
+a:hover {
+        color: red;
+        background-color: white;
 }
-table {
+div.table {
+    margin:auto;
     border-style:solid;
-    border: 1px;
-
+    border-color: brown;
+    border-collapse: collapse;
+    width: 100%;
 }
+th {border: 5px; 
+border-color:green; 
+border-style:double; 
+background-color: lightgray;
+}
+td {border-color:black; 
+    border-style:dotted; 
+    background-color: palegoldenrod;
+    width: 100%;
+}
+
+body {
+    background-color: lightblue; }
+  @media (max-width: 600px) {
+    body {
+      background-color: lightpink;
+    }}
+    @media (max-width: 300px) {
+        body {
+          background-color: beige;
+        }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: lightpink;
+    padding: 15px;
+    place-items:center;
+  }
+  
+ 
+  .item1:hover{transform: scale(1.5)}
+  .item2:hover{transform: rotate(180deg)}
+
+  .parallax {
+    background-image: url('https://i.pinimg.com/originals/9f/7e/4d/9f7e4db6a54b923fc83dae0141429655.jpg');
+    min-height: 500x;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
