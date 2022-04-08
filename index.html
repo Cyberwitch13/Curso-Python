@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/4bdccd792e.js" crossorigin="anonymous"></script>
 <link type="text/css" rel ="stylesheet" href="style.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <header>
-    <h1 >Hola Profe! </h1>
-    <h3>Este es mi trabajo Práctico</h3>
-    <nav>
+
+    <nav class="navbar"> 
         <a href=index.html >Home</a>
         <a href=fluffy.html >Gatos Plumosos</a>
         <a href=evil.html>Gatos Malévolos</a>
         <a href="https://www.fundaciondegatitos.org.ar/donaciones">Ayudar</a>
-     
+       
    </nav>
+   <div class="intro">
+   <h1 >Hola Profe! </h1>
+   <h3>Este es mi trabajo Práctico</h3>
+</div>
 </header>
  <body>
-     <p>Antes que nada te aclaro que mi fuerte no es el diseño, asi que voy a intentar aplicar los conocimientos que vimos, pero no esperes que se vea "lindo", ya que no es mi objetivo. Tan solo pretendo que puedas evaluar los conocimientos adquiridos.</p>
+    <div class=textblock> <p>Antes que nada te aclaro que mi fuerte no es el diseño, asi que voy a intentar aplicar los conocimientos que vimos, pero no esperes que se vea "lindo", ya que no es mi objetivo. Tan solo pretendo que puedas evaluar los conocimientos adquiridos.</p>
           <h2>Esta es una tabla, armada con las etiquetas que vimos en las primeras clases:</h2>
      <p>Aproveche para usar distintos estilos en los margenes fondos, etc. Algunos aplicados a través de la Stylesheet y otros inline.</p>
+    </div>
   <div class="table">      
 <table>
     <tr >
@@ -72,12 +80,16 @@
 </div>
 <br>
 <hr>
+<div class="textblock">
 <h2>Este es un video de gatos andando en roombas</h2>
 <p>Esta insertado con un iframe desde Youtube.</p>
+</div>
 <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/mk4XB2wZqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <hr>
+<div class="textblock">
 <h2>Este es un ejemplo de un formulario con validacion javascript en el campo email que no puede estar vacio:</h2>
+</div>
 <div class="form">
     <form name="cats" action="submit" onsubmit="validateForm()" method="post">
      
