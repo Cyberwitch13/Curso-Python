@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<script src="script.js"></script>
 </head>
 <header>
 
@@ -17,7 +18,7 @@
         <a href=index.html >Home</a>
         <a href=fluffy.html >Gatos Plumosos</a>
         <a href=evil.html>Gatos Malévolos</a>
-        <a href="https://www.fundaciondegatitos.org.ar/donaciones">Ayudar</a>
+        <a onclick="gracias()" href="https://www.fundaciondegatitos.org.ar/donaciones" target="_blank" >Ayudar</a>
        
    </nav>
    <div class="intro">
@@ -108,15 +109,7 @@
   <input type="checkbox" id="CatS" name="CatS" value="CatS">
   <label for="CatS"> Gatos Sin Pelo</label><br>
   <button type="button" onclick="validateForm()">Enviar</button>
-    <script>
-    function validateForm() {
-    let x = document.forms["cats"]["email"].value;
-        if (x =="") {
-      alert("Email es obligatorio");
-      return text = "Enviado";
-    }
-  }</script>
-    </form>
+     </form>
 </div>
 </body>
 
