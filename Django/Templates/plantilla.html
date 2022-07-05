@@ -7,15 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-   {% include 'barra.html' %}
-   <ul>
-    {% if temas_curso %}
-        {% for tema in temas_curso %}
-            <li>{{tema|first|lower}}</li>
-        {% endfor %}
-    {% else %}
-        <p>No hay temas que mostrar</p>
-    {% endif %}
-   </ul>
+ <h1>Hola desde la plantilla!</h1>
+
+    <p>Nombre: {{nombre_persona}} {{apellido_persona}}</p>
+    <p>Fecha: {{now}}</p
+
 </body>
 </html>
